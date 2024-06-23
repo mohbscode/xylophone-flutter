@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const XylophoneApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class XylophoneApp extends StatelessWidget {
+  const XylophoneApp({super.key});
 
   // This widget is the root of your application.
   @override
@@ -14,7 +14,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Xylopone"),
+          title: const Text("Xylopone"),
+        ),
+        body: const SafeArea(
+          child: Center(child: Text("KEYS")),
         ),
       ),
     );
