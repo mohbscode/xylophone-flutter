@@ -18,80 +18,128 @@ class XylophoneApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Xylophone'),
-        ),
+        backgroundColor: Colors.black,
+        // appBar: AppBar(
+        //   title: const Text('Xylophone'),
+        // ),
         body: SafeArea(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              TextButton(
-                onPressed: () {
-                  playSound(1);
-                },
-                child: Container(
-                  width: 100.0,
-                  height: 50.0,
-                  color: Colors.red,
+              Expanded(
+                child: TextButton(
+                  onPressed: () {
+                    playSound(1);
+                  },
+                  child: Container(
+                    constraints: const BoxConstraints.expand(),
+                    color: Colors.red,
+                    child: const Icon(
+                      Icons.circle,
+                      size: 30.0,
+                      color: Colors.white,
+                    ),
+                  ),
                 ),
               ),
-              TextButton(
-                onPressed: () {
-                  playSound(2);
-                },
-                child: Container(
-                  width: 100.0,
-                  height: 50.0,
-                  color: Colors.orange,
+              Expanded(
+                child: TextButton(
+                  onPressed: () {
+                    playSound(2);
+                  },
+                  child: Container(
+                    constraints: const BoxConstraints.expand(),
+                    color: Colors.orange,
+                    child: const Icon(
+                      Icons.circle,
+                      size: 30.0,
+                      color: Colors.white,
+                    ),
+                  ),
                 ),
               ),
-              TextButton(
-                onPressed: () {
-                  playSound(3);
-                },
-                child: Container(
-                  width: 100.0,
-                  height: 50.0,
-                  color: Colors.green,
+              Expanded(
+                child: TextButton(
+                  onPressed: () {
+                    playSound(3);
+                  },
+                  child: Container(
+                    constraints: const BoxConstraints.expand(),
+                    color: Colors.green,
+                    child: const Icon(
+                      Icons.circle,
+                      size: 30.0,
+                      color: Colors.white,
+                    ),
+                  ),
                 ),
               ),
-              TextButton(
-                onPressed: () {
-                  playSound(4);
-                },
-                child: Container(
-                  width: 100.0,
-                  height: 50.0,
-                  color: Colors.blue,
+              Expanded(
+                child: TextButton(
+                  onPressed: () {
+                    playSound(4);
+                  },
+                  child: Container(
+                    constraints: const BoxConstraints.expand(),
+                    color: Colors.blue,
+                    child: const Icon(
+                      Icons.circle,
+                      size: 30.0,
+                      color: Colors.white,
+                    ),
+                  ),
                 ),
               ),
-              TextButton(
-                onPressed: () {
-                  playSound(5);
-                },
-                child: Container(
-                  width: 100.0,
-                  height: 50.0,
-                  color: Colors.yellow,
+              Expanded(
+                child: TextButton(
+                  onPressed: () {
+                    playSound(5);
+                  },
+                  child: Container(
+                    constraints: const BoxConstraints.expand(),
+                    color: Colors.yellow,
+                    child: const Icon(
+                      Icons.circle,
+                      size: 30.0,
+                      color: Colors.white,
+                    ),
+                  ),
                 ),
               ),
-              TextButton(
-                onPressed: () {
-                  playSound(6);
-                },
-                child: Container(
-                  width: 100.0,
-                  height: 50.0,
-                  color: Colors.teal,
+              Expanded(
+                child: TextButton(
+                  onPressed: () {
+                    playSound(6);
+                  },
+                  child: Container(
+                    constraints: const BoxConstraints.expand(),
+                    color: Colors.teal,
+                    child: const Center(
+                      child: Icon(
+                        Icons.circle,
+                        size: 30.0,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
                 ),
               ),
-              TextButton(
-                onPressed: () {
-                  playSound(7);
-                },
-                child: Container(
-                  width: 100.0,
-                  height: 50.0,
-                  color: Colors.brown,
+              Expanded(
+                child: TextButton(
+                  onPressed: () {
+                    playSound(7);
+                  },
+                  child: Container(
+                    constraints: const BoxConstraints.expand(),
+                    color: Colors.brown,
+                    child: const Center(
+                      child: Icon(
+                        Icons.circle,
+                        size: 30.0,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
                 ),
               ),
             ],
